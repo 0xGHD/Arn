@@ -20,7 +20,6 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: kiki
           template: ./az.txt
-          parameters: 'adminUsername=kavya adminpassword=Chinnu@12345 '
 
         # output containerName variable from template
       - run: echo ${{ steps.deploy.outputs.containerName }}
